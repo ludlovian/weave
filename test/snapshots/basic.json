@@ -1,0 +1,38 @@
+[
+  [
+    {
+      "name": "foo",
+      "colour": "red"
+    },
+    {
+      "name": "foo",
+      "age": 10
+    },
+    {
+      "name": "foo",
+      "fruit": "apple"
+    }
+  ],
+  [
+    {
+      "name": "bar",
+      "colour": "blue"
+    },
+    {
+      "name": "bar",
+      "age": 20
+    },
+    {
+      "name": "bar",
+      "fruit": "banana"
+    }
+  ],
+  [
+    null,
+    null,
+    {
+      "name": "quux",
+      "fruit": "orange"
+    }
+  ]
+]

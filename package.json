@@ -1,0 +1,28 @@
+{
+  "name": "weave",
+  "description": "Weaves multiple async streams into a single one",
+  "version": "0.0.1",
+  "main": "src/index.mjs",
+  "module": "src/index.mjs",
+  "type": "module",
+  "scripts": {
+    "clean": "rm -rf coverage/ node_modules/.cache/",
+    "format": "prettier-standard {src,test}/*.{m,}js",
+    "lint": "standard {src,test}/*.{m,}js|snazzy",
+    "test": "c8 uvu",
+    "coverage": "npm run test && c8 report --reporter=html && sirv coverage/ -H 0.0.0.0 -p 8000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ludlovian/weave.git"
+  },
+  "author": "",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/ludlovian/weave/issues"
+  },
+  "homepage": "https://github.com/ludlovian/weave#readme",
+  "devDependencies": {
+    "uvu": "^0.5.1"
+  }
+}
