@@ -1,5 +1,6 @@
 [
   [
+    "foo",
     {
       "name": "foo",
       "colour": "red"
@@ -14,6 +15,7 @@
     }
   ],
   [
+    "bar",
     {
       "name": "bar",
       "colour": "blue"
@@ -28,6 +30,7 @@
     }
   ],
   [
+    "quux",
     null,
     null,
     {

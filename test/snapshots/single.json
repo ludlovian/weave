@@ -1,11 +1,13 @@
 [
   [
+    "foo",
     {
       "name": "foo",
       "colour": "red"
     }
   ],
   [
+    "bar",
     {
       "name": "bar",
       "colour": "blue"

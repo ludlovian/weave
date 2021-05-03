@@ -39,5 +39,5 @@ function read (streams, key, store) {
 }
 
 function valueFor (streams, key) {
-  return streams.map(stream => stream.get(key))
+  return [key, ...streams.map(stream => stream.get(key))]
 }

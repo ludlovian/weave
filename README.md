@@ -10,7 +10,7 @@ for (const tuple from weave(key, stream1, stream2, ...)) {...}
 
 The streams are aligned to the same key - which can be a simple property name or `record => key` function.
 
-The woven stream yields tuples `[rec1, rec2, ...]` of the matching records
+The woven stream yields tuples `[key, rec1, rec2, ...]` of the key and matching records
 
 If a stream is missing a record for a given key, then the tuple has `null` in its place.
 
