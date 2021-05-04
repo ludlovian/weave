@@ -1,5 +1,7 @@
+import uniq from 'pixutil/uniq'
+
 import Stream from './stream.mjs'
-import { makeSelector, allSame, earliest, uniq } from './util.mjs'
+import { makeSelector, allSame, earliest } from './util.mjs'
 
 export default async function * weave (keyFunc, ...sources) {
   if (!sources.length) return
@@ -24,7 +26,7 @@ export default async function * weave (keyFunc, ...sources) {
     }
   }
 
-  const keys = uniq(streams.map(stream => stream.keys()))
+  const keys = uniq(...streams.map(stream => stream.keys()))
   for (const key of keys) {
     yield valueFor(streams, key)
   }

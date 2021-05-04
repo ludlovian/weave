@@ -16,7 +16,3 @@ export function earliest (vals) {
   }
   return ret
 }
-
-export function uniq (arrs) {
-  return [...new Set([].concat(...arrs))]
-}

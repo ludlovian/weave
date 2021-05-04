@@ -24,5 +24,8 @@
   "homepage": "https://github.com/ludlovian/weave#readme",
   "devDependencies": {
     "uvu": "^0.5.1"
+  },
+  "dependencies": {
+    "pixutil": "github:ludlovian/pixutil#semver:^1.0.0"
   }
 }
